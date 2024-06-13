@@ -1,0 +1,21 @@
+:root {
+    --turqoise-blue-color: #7CAAAD;
+    --dark-navy-color: #1F242C;
+    --white-color: #FFFFFF;
+    --grey-color: #B1B1B1;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "vt323";
+}
+
+.btn {
+    padding: 2;
+}
