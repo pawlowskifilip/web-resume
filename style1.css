@@ -47,6 +47,11 @@ section {
     padding: 5em 2em;
 }
 
+.wrapper {
+    max-width: 1065px;
+    margin: 0 auto;
+}
+
 .intro {
     display: flex;
     flex-direction: column;

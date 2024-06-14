@@ -6,110 +6,249 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style1.css">
-    <title>Filip Pawlowski's Portfolio</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about_me" class="btn"><span class="number">00.</span> About</a></li>
-            <li><a href="#experience" class="btn"><span class="number">01.</span> Experience</a></li>
-            <li><a href="#projects" class="btn"><span class="number">10.</span> Projects</a></li>
-            <li><a href="#contact" class="btn"><span class="number">11.</span> Contact</a></li>
-        </ul>
-    </nav>
-    <section class="intro">
-        <div class="binary-code">
-            <p><span class="bracket">&lt;</span>0100<br>0110 01010<br>000<span class="bracket">&gt;</span></p>
-        </div>
-        <div class="intro-text">
-            <h1 class="intro-comment">// Hi, my name is</h1>
-            <h2>Filip Pawlowski.</h2>
-            <h3>I am a</h3>
-            <p class="intro-description">{" <span class="highlight">_beginner software developer</span> "}</p>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <div class="logo-left">
+                        <span class="bracket">&lt;</span>0100<br>0110
+                    </div>
+                    <div class="logo-right">
+                        <br>0101<br>0000<span class="bracket">&gt;</span>
+                    </div>   
                 </div>
-    </section>
-    <section id="about_me">
-        <h3>&lt;about_me&gt;</h3>
-        <p>//...Hi! I'm Filip and I’m currently working as an <a href="#">Automation Test Engineer</a> in regression testing.</p>
-        <p>In my free time (there is not much of it :) <a href="#">I write code</a>. I have mostly worked Python and I am currently learning Java.</p>
-        <p>I’ve graduated <a href="#">Electronic and Computer Engineering</a> on Wrocław University of Science and Technology. During that studies I’ve completed courses like:</p>
-        <ul>
-            <li>“Scientific and Engineering Programming”</li>
-            <li>“Programming Systems and Environments”</li>
-            <li>“Computer Networks”</li>
-            <li>“Artificial Intelligence and Computer Vision”</li>
-        </ul>
-        <p>Title of my Bachelor Thesis was <a href="#">“Design and implementation of waste recognition system”</a> called “Clash”.</p>
-        <p>My biggest interest is <a href="#">AI</a> and the problems that can be solved using it. I love traveling - especially across USA.</p>
-        <h3>&lt;/about_me&gt;</h3>
-        <div class="photo">
-            <img src="images/filip.png" alt="Filip Pawlowski">
-            <div class="social-links">
-                <img src="images\linkedin.svg" alt="LinkedIn">
-                <img src="images\github.svg" alt="GitHub">
+                <ul>
+                    <li><a href="#"><span class="number">00.</span> About</a></li>
+                    <li><a href="#"><span class="number">01.</span> Experience</a></li>
+                    <li><a href="#"><span class="number">10.</span> Projects</a></li>
+                    <li><a href="#"><span class="number">11.</span> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- End of navigation menu-->
+
+    <div class="hero-section">
+        <div class="info_shadow_left">
+        </div>
+
+        <div class="info">
+            <h1>// Hi, my name is</h1>
+            <h2>Filip Pawlowski.</h2>
+            <p>I am a</p>
+            <p>{" <span class="highlight">_beginner software developer</span> "}</p>
+
+            <div class="info_left">
+            </div>
+
+            <div class="info_right">
             </div>
         </div>
-    </section>
-    <section id="experience">
-        <h3>&lt;experience&gt;</h3>
-        <p>Automation Test Engineer <a href="#">@ Nokia</a></p>
-        <p>October 2022 - Present</p>
-        <ul>
-            <li>“Creating reports of test errors”</li>
-            <li>“Integrating hardware units with testing software”</li>
-            <li>“Being a part of a machine learning team”</li>
-            <li>“Writing tasks from Kanban board to improve global code repository”</li>
-            <li>“Work with <a href="#">Python</a>, <a href="#">Robot Framework</a>, <a href="#">GitLAB</a>, <a href="#">MongoDB</a>, <a href="#">PyCharm</a>, <a href="#">Jira</a>, <a href="#">Agile</a>”</li>
-        </ul>
-        <h3>&lt;/experience&gt;</h3>
-    </section>
-    <section id="projects">
-        <h3>&lt;projects&gt;</h3>
-        <div class="project">
-            <h4>{ _Scheduler }</h4>
-            <p>Tech stack: _Python, _CustomTkinter</p>
-            <p>//...Program which automatically creates a schedule based on the provided data like:</p>
-            <ul>
-                <li>“number of workers”</li>
-                <li>“their availability”</li>
-                <li>“their priority”</li>
-                <li>“length of a time frame”</li>
-                <li>“number of days”</li>
-            </ul>
-            <p>//...and much more which is stored in the JSON database. After that the program creates and exports the schedule to the .csv file.</p>
-            <p>//...For that I have created <a href="#">user friendly GUI</a> using CustomTKinter.</p>
-            <img src="images/scheduler.png" alt="Scheduler Project">
-            <li><a href="#source_code" class="btn">_source_code_</a></li>
+
+        <div class="image_shadow_right">
         </div>
-        <div class="project">
-            <h4>{ _Clash }</h4>
-            <p>Tech stack: _Python, _Jupyter, _Notebook, Swift, TensorFlow, NumPy, Pandas</p>
-            <p>//...Bachelor thesis project.</p>
-            <p>//...Idea was to create a mobile app which recognizes six different categories of waste, providing immediate recommendations for its disposal based on the provided photo (it can be chosen from library or taken directly from the level of app). Model and the back-end of an app was created in a Python, while whole UI was done in Swift.</p>
-            <p>//...At the core of the system is a custom machine learning model based on convolutional neural networks. Performance indicators such as accuracy, recall, precision, and F1 score were used to strictly evaluate the model, achieving an accuracy of 82%.</p>
-            <img src="images/clash.png" alt="Clash Project">
-            <li><a href="#source_code" class="btn">_source_code_</a></li>
+    </div>
+
+        <!-- End of header section -->
+        <!-- About section -->
+
+        <div class="wrapper">
+            <div class="about_shadow_right"></div>
+            <div class="about_shadow_left"></div>
+            <section class="about_me">
+                <div class="left">
+                    <div class="start_section">
+                        &lt;about_me&gt;
+                    </div>
+                    <div class="about_binary">
+                    </div>
+                    <p class="about_text">
+                        //...Hi! I’m Filip and I’m currently working as a <a href="#">Test Engineer</a> in regression testing.<br><br>
+                        In my free time (there is not much of it :) <a href="#">I write code</a>. I have mostly worked Python and I'm currently learning Java.<br><br>
+                        I’ve graduated <a href="#">Electronic and Computer Engineering</a> on <a href="#">Wrocław University of Science and Technology</a>. During that studies I’ve completed courses like:<br><br>
+                        [<br>
+                            <span class="highlight"></span>“Scientific and Engineering Programming”</span>,<br>
+                            <span class="highlight"></span>“Programming Systems and Environments”</span>,<br>
+                            <span class="highlight"></span>“Computer Networks”</span>,<br>
+                            <span class="highlight"></span>“Artificial Intelligence and Computer Vision”</span><br>
+                        ]<br><br>
+                        Title of my Bachelor Thesis was “<a href="#">Design and implementation of waste recognition system</a>” called “<a href="#">Clash</a>”.<br><br>
+                        My biggest interest is <a href="#">AI</a> and the problems that can be solved using it. I love traveling - especially across <a href="#">USA</a>.<br>
+                    </p>
+
+                    <div class="end_section">
+                        &lt;/about_me&gt;
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="me_rectangle">
+                        <img src="images/photo_rectangle.svg" alt="">
+                    </div>
+                    <div class="me_photo">
+                        <img src="images/filip.png" alt="">
+                    </div>
+                    <div class="social_links">
+                        <div class="linkedin">
+                            <img src="images/linkedin.svg" alt="">
+                        </div>
+                        <div class="github">
+                            <img src="images/github.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <h3>&lt;/projects&gt;</h3>
-    </section>
-    <section id="contact">
-        <h3>&lt;contact&gt;</h3>
-        <form>
-            <label for="name">_name</label>
-            <input type="text" id="name" name="name">
-            <label for="email">_e-mail</label>
-            <input type="email" id="email" name="email">
-            <label for="message">_message</label>
-            <textarea id="message" name="message"></textarea>
-            <li><a href="#send" class="btn">{_send}</a></li>
-        </form>
-        <h3>&lt;/contact&gt;</h3>
-        <footer>
-            <img src="images\linkedin.svg" alt="LinkedIn">
-            <img src="images\github.svg" alt="GitHub">
-            <p>Created by Filip Pawlowski</p>
-        </footer>
-    </section>
+
+        <!-- End of about_me section -->
+        <!-- Experience section -->
+        <div class="wrapper">
+            <section class="experience-section">
+
+                <div class="start_section">
+                    &lt;experience&gt;
+                </div>
+                <p class="experience_text">
+                    Automation Test Engineer @ Nokia <br>
+                    October 2022 - Present <br>
+                    [ <br>
+                        “Creating reports of test errors”, <br>
+                        “Integrating hardware units with testing software”, <br>
+                        “Being a part of a machine learning team”, <br>
+                        “Writing tasks from Kanban board to improve global code repository”, <br>
+                        “Work with Python, Robot Framework, GitLAB, MongoDB, PyCharm, Jira, Agile” <br>
+                    ] <br>
+                </p>
+                <div class="end_section">
+                    &lt;/experience&gt;
+                </div>
+
+            </section>
+        </div>
+
+        <!-- End of experience -->
+    
+        <div class="wrapper">
+            <section class="projects">
+                <div class="start_section">
+                    &lt;projects&gt;
+                </div>
+                <h4>{ _Scheduler }</h4>
+                <p class="project_text">
+                    Tech stack: _Python, _CustomTKinter <br><br>
+                    //...Program which automatically creates a schedule based on the provided data like: <br> <br>
+                    [ <br>
+                        “number of workers”, <br>
+                        “their availability”, <br>
+                        “their priority”, <br>
+                        “length of a time frame”, <br>
+                        “number of days” <br>
+                    ] <br><br>
+                    //...and much more which is stored in the JSON database. After that the program creates and exports the schedule to the .csv file. <br> <br>
+                    //...For that I have created user friendly GUI using CustomTKinter. <br>
+                </p>
+                <div class="scheduler_photo">
+                    <img src="images/scheduler.png" alt="">
+                </div>
+                <div class="vertical_rectangle">
+                    <img src="images/horizontal_rectangle.svg" alt="">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">_source_code_</a>
+                    </li>
+                </ul>
+                <h4>{ _Clash }</h4>
+                <p class="project_text">
+                    Tech stack: _Python, _CustomTKinter <br><br>
+                    Tech stack: _Python, _Jupyter_Notebook, Swift, TensorFlow, NumPy, Pandas <br> <br>
+                    //...Bachelor thesis project. <br> <br>
+                    //...Idea was to create a mobile app which recognizes six different categories
+                    of waste, providing immediate recommendations for its disposal based on the provided photo (it can be chosen from library or taken directly from the level of app). Model and the back-end of an app was created in a Python, while whole UI was done in Swift.<br> <br>
+                    //...At the core of the system is a custom machine learning model based on convolutional
+                    neural networks. Performance
+                    indicators such as accuracy, recall, precision, and F1 score were used to strictly
+                    evaluate the model, achieving an accuracy of 82%.  <br> <br>              
+                </p>
+                <div class="clash_photo">
+                    <img src="images/clash.png" alt="">
+                </div>
+                <div class="vertical_rectangle">
+                    <img src="images/horizontal_rectangle.svg" alt="">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">_source_code_</a>
+                    </li>
+                </ul>
+                <div class="end_section">
+                    &lt;/projects&gt;
+                </div>
+            </section>
+        </div>
+    
+            <!-- End of projects section-->
+
+            <div class="wrapper">
+                <section class="contact">
+                    <div class="start_section">
+                        &lt;contact&gt;
+                    </div>
+                    <h4>_name</h4>
+                    <form action="#">
+                        <input type="text" placeholder="Type your name...">
+                    </form>
+                    <div class="line">
+                        <img src="images/Line.png" alt="">
+                    </div>
+                    <h4>_e-mail</h4>
+                    <form action="#">
+                        <input type="text" placeholder="Type your e-mail...">
+                    </form>
+                    <div class="line">
+                        <img src="images/Line.png" alt="">
+                    </div>
+                    <h4>_message</h4>
+                    <form action="#">
+                        <input type="text" placeholder="Type your message...">
+                    </form>
+                    <div class="line">
+                        <img src="images/Line.png" alt="">
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">{ _send }</a>
+                        </li>
+                    </ul>
+                    <div class="end_section">
+                        &lt;/contact&gt;
+                    </div>
+                </section>
+                
+                <!-- End of contact section -->
+
+                <footer>
+                    <div class="wrapper">
+                        <section class="credits">
+                            <div class="linkedin">
+                                <img src="images/linkedin.svg" alt="">
+                            </div>
+                            <div class="github">
+                                <img src="images/github.svg" alt="">
+                            </div>
+                            <p class="copyright"> This website was created by © Filip Pawłowski 2024</p>
+                            <div class="bottom_line">
+                                <img src="images/bottom_line.png" alt="">
+                            </div>
+                        </section>
+                    </div>
+                </footer>
+            </div>
+        
+    <script src="main.js"></script>
 </body>
 </html>
