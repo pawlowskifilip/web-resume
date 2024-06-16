@@ -276,7 +276,7 @@ nav ul li a:hover .number {
 }
 
 .about_me .about_text {
-    color: var(--white-color);
+    color: var(--grey-color);
     margin-left: 4em;
     z-index: 2;
 }
@@ -354,20 +354,7 @@ nav ul li a:hover .number {
     align-items: flex-start;
     justify-content: flex-start;
     margin-left: 8em;
-
 }
-
-/* .experience-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2em;
-    z-index: 2;
-    text-align: left;
-} */
 
 .experience_shadow_left {
     position: absolute;
@@ -409,6 +396,7 @@ nav ul li a:hover .number {
 }
 
 .experience_text {
+    color: var(--grey-color);
     max-width: 50%;
     font-size: 25px;
     margin-top: 1em;
@@ -429,5 +417,204 @@ nav ul li a:hover .number {
     color: var(--turquoise-blue-color);
     font-size: 40px;
     z-index: 2;
+}
+
+/* End of experience section */
+
+.projects-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 8em;
+    padding-left: 4em;
+}
+
+.project_text { 
+    color: var(--grey-color);
+    max-width: 50%;
+    font-size: 25px;
+    margin-left: 4em;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    padding-left: 4em; /* Use padding instead of margin for consistency */
+
+}
+
+.projects_section .start_section{
+    color: var(--turquoise-blue-color);
+    font-size: 40px;
+    z-index: 2;
+    margin-top: 8em;
+    padding-left: 3em; /* Use padding instead of margin for consistency */
+
+}
+
+.projects_section .end_section {
+    color: var(--turquoise-blue-color);
+    font-size: 40px;
+    z-index: 2;
     margin-bottom: 6em;
+    padding-left: 3em; /* Use padding instead of margin for consistency */
+}
+
+.projects_section h4 {
+    margin-left: 3em;
+    font-size: 2em;
+    color: var(--white-color);
+    margin-top: 1em; /* Add top margin for spacing */
+    padding-left: 3em; /* Use padding instead of margin for consistency */
+    margin-top: 1em; /* Add top margin for spacing */
+}
+
+.projects_section .vertical_rectangle {
+    width: 300px;
+    height: auto;
+    z-index: 2;
+    padding-left: 25%;
+}
+
+.projects_section .scheduler_photo,
+.projects_section .clash_photo {
+    width: 300px;
+    height: auto;
+    z-index: 1;
+    padding-left: 25%;
+}
+
+.projects_section ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.projects_section ul li {
+    list-style: none;
+}
+
+.projects_section ul li a {
+    color: var(--grey-color);
+    font-family: VT323;
+    font-size: 2em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #7CAAAD;
+}
+
+.projects_section ul li a:hover {
+    color: var(--lighter-turquoise-blue-color);
+}
+
+/* end of projects section */
+
+.contact_section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.contact_section .form {
+    padding-left: 15%;
+}
+
+.contact_section h4 {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+    color: var(--grey-color);
+}
+
+.contact_section form {
+    margin: 0;
+}
+
+.contact_section form input {
+    width: 600px; 
+    padding: 0.5em; 
+    border: none;
+    background: none;
+    color: var(--white-color);
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+}
+
+.contact_section ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+
+.contact_section ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+
+.contact_section ul li a {
+    color: var(--grey-color);
+    font-family: VT323;
+    font-size: 2em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #7CAAAD;
+    color: var(--grey-color);
+    margin-left: 50%;
+}
+
+.contact_section ul li a:hover {
+    color: var(--white-color);
+}
+
+.contact_section .start_section {
+    color: var(--turquoise-blue-color);
+    font-size: 40px;
+    z-index: 2;
+    margin-top: 8em;
+    padding-left: 3em; 
+}
+
+.contact_section .end_section {
+    color: var(--turquoise-blue-color);
+    font-size: 40px;
+    z-index: 2;
+    padding-left: 3em;
+}
+
+/* end of contact section */
+
+footer {
+    margin-top: 10%;
+    background-color: #0D1B2A;
+    /* padding: 1em 0; */
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 1em;
+}
+
+.social-links {
+    display: flex;
+    gap: 1em;
+}
+
+footer .bottom_line {
+    width: 200%;
+    height: 10px;
+    background-color: var(--turquoise-blue-color);
 }
