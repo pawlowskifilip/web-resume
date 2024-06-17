@@ -17,7 +17,7 @@ html {
     padding: 0;
     height: 100%;
     font-family: 'VT323', monospace;
-    background: #0D1B2A;
+    background: var(--dark-navy-color);
     color: var(--white-color);
     overflow-x: hidden;
 
@@ -486,7 +486,7 @@ nav ul li a:hover .number {
     flex: 1;
     max-width: 200%;
     padding: 1em;
-    margin-left: -76%;
+    margin-left: -105%;
     margin-top: 5em;
     z-index: 1;
 }
@@ -495,20 +495,27 @@ nav ul li a:hover .number {
     flex: 1;
     max-width: 100%;
     padding: 1em;
-    margin-left: 25%;
+    margin-left: 15%;
     z-index: 2;
 }
 
-.scheduler_photo img, .vertical_rectangle img {
+.scheduler_photo img {
     max-width: 100%;
     height: auto;
+}
+
+.vertical_rectangle img {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    max-height: 500px;
 }
 
 .clash_photo {
     flex: 1;
     max-width: 100%;
     padding: 1em;
-    margin-left: 25%;
+    margin-left: 20%;
     z-index: 2;
 }
 
@@ -618,7 +625,7 @@ nav ul li a:hover .number {
 
 footer {
     margin-top: 10%;
-    background-color: #0D1B2A;
+    background-color: var(--dark-navy-color);
     /* padding: 1em 0; */
 }
 
