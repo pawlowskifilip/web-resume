@@ -251,7 +251,7 @@ nav ul li a:hover .number {
 
 
 .about_me .left {
-    max-width: 50%;
+    max-width: 60%;
     font-size: 25px;
     padding-left: 5vh;
     position: static;
@@ -261,7 +261,7 @@ nav ul li a:hover .number {
 .about_me .right {
     position: static;
     display: flex;
-    padding-left: 18vh;
+    padding-left: 10vh;
     flex-direction: column;
     align-items: center;
     z-index: 2;
@@ -312,8 +312,8 @@ nav ul li a:hover .number {
 
 .me_image .me_photo {
     position: absolute;
-    margin-left: -18vh;
-    margin-top: 1vh;
+    margin-left: -23vh;
+    margin-top: 2vh;
     height: auto;
     z-index: 2;
 }
@@ -600,57 +600,76 @@ nav ul li a:hover .number {
 
 .projects_section ul li a:hover {
     color: var(--lighter-turquoise-blue-color);
-} */
+}
+
 
 /* end of projects section */
+
 
 .contact_section {
     position: relative;
     display: flex;
-    flex-direction: row;
-    width: 100vh;
+    height: 100vh;
+    width: 110vh;
     align-items: center;
     justify-content: flex-start;
 }
 
-/* .contact_section .start_section {
+.contact {
+    max-width: 100%;
+    font-size: 25px;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    position: static;
+    z-index: 2;
+}
+
+.contact_section .start_section {
     color: var(--turquoise-blue-color);
     font-size: 40px;
     z-index: 2;
-    margin-top: 10%;
-    padding-left: 3em; 
 }
 
 .contact_section .end_section {
     color: var(--turquoise-blue-color);
     font-size: 40px;
     z-index: 2;
-    padding-left: 3em;
-    margin-bottom: 5%;
-} */
-/*
+} 
+
 .contact_section .form {
-    padding-left: 15%;
+    padding-left: 10vh;
 }
 
-.contact_section h4 {
-    margin: 0.5em 0;
-    font-size: 1.5em;
+.contact_section .contact_info {
+    font-size: 30px;
     color: var(--grey-color);
-}
-
-.contact_section form {
-    margin: 0;
+    margin-bottom: 0.5em;
 }
 
 .contact_section form input {
-    width: 600px; 
+    width: 705px; 
     padding: 0.5em; 
+    padding-top: 1em;
     border: none;
-    background: none;
+    background: transparent;
     color: var(--white-color);
     font-family: 'VT323', monospace;
     font-size: 1.2rem;
+    outline: none;
+}
+
+.contact_section form .message-input {
+    width: 705px;
+    height: 150px;
+    padding: 10px;
+    background: none; 
+    color: var(--white-color);
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem; 
+    resize: none; 
+    overflow: auto;
+    border: none;
+    outline: none;
 }
 
 .contact_section ul {
@@ -679,8 +698,14 @@ nav ul li a:hover .number {
 .contact_section ul li a:hover {
     color: var(--white-color);
 }
+textarea::-webkit-scrollbar {
+    width: 0.5em;
+}
 
-*/
+textarea::-webkit-scrollbar-thumb {
+  background-color: var(--lighter-turquoise-blue-color);
+  outline: 0.5px var(--lighter-turquoise-blue-color);
+}
 
 /* end of contact section */
 
