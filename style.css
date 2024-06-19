@@ -106,7 +106,7 @@ nav ul li a:hover .number {
     text-align: left;
     padding-left: 15vh;
     z-index: 2;
-    width: 50%;
+    width: 60%;
 }
 
 .hero-section .info h1 {
@@ -328,7 +328,7 @@ nav ul li a:hover .number {
 .about_me .social_links {
     display: flex;
     gap: 0.5vh;
-    margin-top: 1.5vh;
+    margin-top: 2.5vh;
     z-index: 2;
 }
 
@@ -709,8 +709,13 @@ textarea::-webkit-scrollbar-thumb {
 
 /* end of contact section */
 
-/* footer {
-    margin-top: 10%;
+footer {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: 110vh;
+    align-items: center;
+    justify-content: flex-start;
     background-color: var(--dark-navy-color);
 }
 
@@ -721,20 +726,17 @@ textarea::-webkit-scrollbar-thumb {
     justify-content: center;
     text-align: center;
     color: var(--white-color);
+    margin-left: 39vh;
 }
 
 .social-links {
     display: flex;
-    gap: 1em;
+    gap: 0.5em;
 }
 
-.social-links {
-    display: flex;
-    gap: 1em;
-}
-
-footer .bottom_line {
-    width: 200%;
+.bottom_line {
+    width: 200vh;
     height: 10px;
     background-color: var(--turquoise-blue-color);
-} */
+    margin-left: -10px;
+}
