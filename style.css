@@ -9,8 +9,8 @@
 *,
 *::after,
 *::before {
-    /* padding: 0;
-    margin: 0; */
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -402,7 +402,7 @@ nav ul li a:hover .number {
 }
 
 .experience {
-    max-width: 100%;
+    max-width: 95%;
     font-size: 25px;
     padding-left: 5vh;
     position: static;
@@ -411,7 +411,6 @@ nav ul li a:hover .number {
 
 .experience_text {
     color: var(--grey-color);
-    max-width: 100vh;
     font-size: 25px;
     position: relative;
     z-index: 2;
@@ -465,7 +464,7 @@ nav ul li a:hover .number {
     max-width: 100%;
     font-size: 25px;
     padding-left: 5vh;
-    padding-right: 5vh;
+    padding-right: 10vh;
     position: static;
     z-index: 2;
 }
@@ -482,28 +481,28 @@ nav ul li a:hover .number {
     z-index: 2;
 }
 
+.projects_section .project_title {
+    color: var(--white-color);
+    font-family: 'VT323';
+    font-size: 40px;
+    padding-left: 10vh;
+    padding-top: 10vh;
+}
+
 .project_text { 
     color: var(--grey-color);
-    max-width: 100vh;
+    max-width: 95vh;
     font-size: 25px;
     position: relative;
     z-index: 2;
     text-align: left;
     padding-left: 10vh;
+    padding-right: 5vh;
 }
 
 .projects_section .project_text .highlight {
     margin-left: 5vh;
     z-index: 2;
-}
-
-.projects_section .project_title {
-    color: var(--white-color);
-    font-family: 'VT323';
-    font-size: 40px;
-    padding-top: 10vh;
-    padding-left: 10vh;
-    margin: 0px 0;
 }
 
 .project_images_scheduler {
@@ -512,7 +511,6 @@ nav ul li a:hover .number {
     align-items: center;
     justify-content: flex-start;
     width: 100vh;
-    height: 52vh;
     flex-direction: column;
 }
 
@@ -548,7 +546,6 @@ nav ul li a:hover .number {
     align-items: center;
     justify-content: flex-start;
     width: 100vh;
-    height: 59.5vh;
     flex-direction: column;
 }
 
@@ -584,7 +581,6 @@ nav ul li a:hover .number {
     display: flex;
     justify-content: center;
     width: 100vh;
-    margin-left: -2vh;
 }
 
 .projects_section ul li {
