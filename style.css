@@ -582,6 +582,12 @@ nav ul li a:hover .number {
     padding-right: 5vh;
 }
 
+.project_text a {
+    color: var(--turquoise-blue-color);
+    text-decoration: none;
+    z-index: 3;
+}
+
 .projects_section .project_text .highlight {
     margin-left: 5vh;
     z-index: 3;
