@@ -143,7 +143,7 @@ nav.scrolled {
 nav .logo {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 0.25em;
+    gap: 0.5vh;
     font-size: 2vh;
     color: var(--white-color);
     align-items: start;
@@ -165,9 +165,9 @@ nav .logo-right {
 nav ul {
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 5vh;
     list-style: none;
-    margin: 0;
+    margin: 0vh;
     user-select: none;
 }
 
@@ -215,7 +215,7 @@ nav ul li a:hover .number {
 .hero-section .info h1 {
     color: #7CAAAD;
     font-family: 'VT323';
-    font-size: 25px;
+    font-size: 2vh;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 0;
@@ -224,27 +224,27 @@ nav ul li a:hover .number {
 .hero-section .info h2 {
     color: #EEE;
     font-family: 'VT323';
-    font-size: 46px;
+    font-size: 5vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0px 0;
+    margin: 0vh 0vh;
 }
 
 .hero-section .info p {
     color: #B1B1B1;
     font-family: VT323;
-    font-size: 58px;
+    font-size: 6vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0px 0;
+    margin: 0vh 0vh;
 }
 
 .hero-section .info p .highlight {
     color: #7CAAAD;
     font-family: VT323;
-    font-size: 58px;
+    font-size: 6vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -706,11 +706,11 @@ footer {
     padding-bottom: 20px;
 }
 
-@media (max-width: 1100px) {
-    ::selection {
+@media (max-width: 1000px) {
+    /* ::selection {
         color: var(--dark-navy-color);
         background: var(--grey-color);
-    }
+    } */
 
     html {
         margin: 0;
@@ -955,7 +955,7 @@ footer {
 
     .about_me .left {
         max-width: 100%;
-        font-size: 23px;
+        font-size: 20px;
         padding-left: 0vh;
         z-index: 3;
         margin-right: 0vh;
@@ -1072,7 +1072,7 @@ footer {
 
     .experience_text {
         color: var(--grey-color);
-        font-size: 23px;
+        font-size: 20px;
         position: relative;
         z-index: 3;
         text-align: left;
@@ -1117,7 +1117,7 @@ footer {
 
     .project {
         max-width: 100%;
-        font-size: 23px;
+        font-size: 20px;
         margin-left: -5vh;
         margin-right: 5vh;
         padding: 0 5vh;
@@ -1143,7 +1143,7 @@ footer {
     .project_text {
         color: var(--grey-color);
         max-width: 110vh;
-        font-size: 23px;
+        font-size: 20px;
         position: relative;
         text-align: left;
         padding-left: 5vh;
@@ -1243,7 +1243,7 @@ footer {
 
     .contact {
         max-width: 100%;
-        font-size: 23px;
+        font-size: 20px;
         margin-left: -5vh;
         margin-right: 5vh;
         padding: 0 5vh;
@@ -1263,7 +1263,7 @@ footer {
     }
 
     .contact_section .contact_info {
-        font-size: 23px;        
+        font-size: 20px;        
         color: var(--grey-color);
         margin-bottom: 0.5em;
     }
@@ -1279,7 +1279,7 @@ footer {
         background: transparent;
         color: var(--white-color);
         font-family: 'VT323', monospace;
-        font-size: 23px;
+        font-size: 20px;
         outline: none;
     }
 
