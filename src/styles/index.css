@@ -1,0 +1,24 @@
+/**
+* ! style rules for sectionOne
+*/
+
+.sectionOne__left--title3-2 {
+    line-height: 60px;
+}
+
+/**
+* ! style rules for sectionTwo
+*/
+
+.sectionTwo__left--text {
+    font-family: var(--font);
+    font-size: var(--body);
+    color: var(--gray-color);
+}
+
+.sectionTwo__left--content {
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+

@@ -14,7 +14,11 @@
     --label: 44px;
     --ls: 5px;
 
-    --body: 14px;
+    --title1: 22px;
+    --title2: 44px;
+    --title3: 65px;
+
+    --body: 32px;
 
     --font: "VT323", monospace;
 
@@ -86,6 +90,25 @@
 }
 
 /**
+* ! Styles for text title
+**/
+
+.title1 {
+    font-family: var(--font);
+    font-size: var(--title1);
+}
+
+.title2 {
+    font-family: var(--font);
+    font-size: var(--title2);
+}
+
+.title3 {
+    font-family: var(--font);
+    font-size: var(--title3);
+}
+
+/**
 * ! Styles for hero
 **/
 
@@ -135,6 +158,57 @@
 .container {
     max-width: 1140px;
     margin: auto;
+    align-items: center;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-2-3{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 40px 0;
+    gap: 25px;
+}
+
+.grid-1-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 40px 0;
+
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-start {
+    font-family: var(--font);
+    color: var(--turquoise-blue-color);
+    font-size: var(--h3);
+}
+
+.common-text {
+    font-family: var(--font);
+    color: var(--gray-color);
+    font-size: var(--body);
+}
+
+.common-end {
+    font-family: var(--font);
+    color: var(--turquoise-blue-color);
+    font-size: var(--h3);
 }
 
 @media (max-width: 1200px) {
