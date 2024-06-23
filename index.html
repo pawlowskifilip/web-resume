@@ -1,315 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/src/images/Logo.svg">
+    <title>0100011001010000</title>
+    <link rel="stylesheet" href="src/styles/designSystem.css">
+    <link rel="stylesheet" href="src/styles/index.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="main"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="hero">
+        <div class="navbar container">
+            <div class="navbar__logo">
+                <img src="src/images/Logo.svg" alt="" class="navbar__logo--image">
+            </div>
+            <div class="navbar__menu hidden">
+                <a href="" class="navbar__menu--about">00. About</a>
+                <a href="" class="navbar__menu--experience">01. Experience</a>
+                <a href="" class="navbar__menu--projects">10. Projects</a>
+                <a href="" class="navbar__menu--contact">11. Contact</a>
+            </div>
+            <div class="navbar__icons">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-x-lg hide"></i>
+            </div>
+        </div>
     </div>
 
-    <div class="content">
-
-        <header>
-            <div class="wrapper">
-                <nav>
-                    <div class="logo">
-                        <div class="logo-left">
-                            <span class="bracket">&lt;</span>0100<br>0110
-                        </div>
-                        <div class="logo-right">
-                            <br>0101<br>0000<span class="bracket">&gt;</span>
-                        </div>   
-                    </div>
-                    <ul>
-                        <li><a href="#"><span class="number">00.</span> About</a></li>
-                        <li><a href="#"><span class="number">01.</span> Experience</a></li>
-                        <li><a href="#"><span class="number">10.</span> Projects</a></li>
-                        <li><a href="#"><span class="number">11.</span> Contact</a></li>
-                    </ul>
-                </nav>
-
-                <!-- <nav class="mobile_nav">
-                    <div class="logo">
-                        <div class="logo-left">
-                            <span class="bracket">&lt;</span>0100<br>0110
-                        </div>
-                        <div class="logo-right">
-                            <br>0101<br>0000<span class="bracket">&gt;</span>
-                        </div>   
-                    </div>
-
-                    <div class="menu_icon">
-                        <img src="images/open.svg" alt=""/>
-                    </div>
-                </nav> -->
-
-            </div>
-        </header>
-
-        <!-- End of navigation menu-->
-
-        <!-- end of mobile nav -->
-
-        <div class="wrapper">
-            <div class="hero-section">
-                <div class="info_shadow_left">
-                </div>
-
-                <div class="info">
-                    <h1>// Hi, my name is</h1>
-                    <h2>Filip Pawlowski.</h2>
-                    <p>I am a</p>
-                    <p>{" <span class='highlight'>_beginner software developer</span> "}</p>
-
-                    <div class="info_left">
-                    </div>
-
-                    <div class="info_right">
-                    </div>
-                </div>
-
-                <div class="image_shadow_right">
-                </div>
-            </div>
-        </div>
-
-            <!-- End of header section -->
-            <!-- About section -->
-
-        <div class="wrapper">
-            <div class="about_shadow_right"></div>
-            <div class="about_shadow_left"></div>
-            <section class="about_me">
-                <div class="left">
-                    <div class="start_section">
-                        &lt;about_me&gt;
-                    </div>
-
-                    <div class="about_binary">
-                    </div>
-                    
-                    <p class="about_text">
-                        //...Hi! I'm Filip and I'm currently working as a <a>Test Engineer</a> in regression testing.<br><br>
-                        In my free time (there is not much of it :) <a>I write code</a>. I have mostly worked Python and I'm currently learning Java.<br><br>
-                        I've graduated <a>Electronic and Computer Engineering</a> on <a>Wrocław University of Science and Technology</a>. During that studies I've completed courses like:<br><br>
-                        [<br>
-                            <span class="highlight"></span>“Scientific and Engineering Programming”</span>,<br>
-                            <span class="highlight"></span>“Programming Systems and Environments”</span>,<br>
-                            <span class="highlight"></span>“Computer Networks”</span>,<br>
-                            <span class="highlight"></span>“Artificial Intelligence and Computer Vision”</span><br>
-                        ]<br><br>
-                        Title of my Bachelor Thesis was "<a>Design and implementation of waste recognition system</a>" called "<a>Clash</a>".<br><br>
-                        My biggest interest is <a>AI</a> and the problems that can be solved using it. I love traveling - especially across <a>USA</a>.<br>
-                    </p>
-
-                    <div class="end_section">
-                        &lt;/about_me&gt;
-                    </div>
-                </div>
-
-                <div class="right">
-
-                    <div class="me_image">
-                        <img class="me_rectangle" src="images/photo_rectangle.svg" alt="">
-                        <img class="me_photo" src="images/filip.png" alt="">
-                    </div>
-
-                    <div class="social_links">
-                        <div class="linkedin">
-                            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-                        </div>
-                        <div class="github">
-                            <a href="#"><img src="images/github.svg" alt="GitHub"></a>
-                        </div>
-                    </div>                    
-                </div>
-
-            </section>
-        </div>
-
-            <!-- End of about_me section -->
-            <!-- Experience section -->
-        <div class="wrapper">
-            <section class="experience-section">
-
-                <div class="experience">
-                    <div class="start_section">
-                        &lt;experience&gt;
-                    </div>
-
-                    <p class="experience_text">
-                        <span class="experience_title">Automation Test Engineer</span><a> @ Nokia</a><br>
-                        October 2022 - Present<br>
-                        [ <br>
-                        <span class="highlight"></span>"Creating reports of test errors"</span>,<br>
-                        <span class="highlight"></span>"Integrating hardware units with testing software"</span>,<br>
-                        <span class="highlight"></span>"Being a part of a machine learning team"</span>,<br>
-                        <span class="highlight"></span>"Writing tasks from Kanban board to improve global code repository"</span>,<br>
-                        <span class="highlight"></span>"Work with <a>Python, Robot Framework, GitLAB, MongoDB, PyCharm, Jira, Agile</a>"</span>,<br>
-                        ] <br>
-                    </p>
-                    <div class="end_section">
-                        &lt;/experience&gt;
-                    </div>
-                </div>
-            </div>
-            </section>
-
-            <!-- End of experience -->
-            <!-- projects section -->
+    <div class="sectionOne">
         
-            <div class="wrapper">
-                <section class="projects_section">
-                    <div class="project">
-                        <div class="start_section">
-                            &lt;projects&gt;
-                        </div>
-            
-                        <span class="project_title">{ _Scheduler }</span>
-            
-                        <p class="project_text">
-                            <a>Tech stack: _Python, _CustomTKinter</a><br><br>
-                            //...Program which <a>automatically creates a schedule</a> based on the provided data like: <br> <br>
-                            [ <br>
-                            <span class="highlight"></span>"number of workers"</span>,<br>
-                            <span class="highlight"></span>"their availability"</span>,<br>
-                            <span class="highlight"></span>"their priority"</span>,<br>
-                            <span class="highlight"></span>"length of a time frame"</span>,<br>
-                            <span class="highlight"></span>"number of days"</span>,<br>
-                            ] <br><br>
-                            //...and much more which is stored in the JSON database. After that the program creates and exports the schedule to the<a> .csv</a> file. <br> <br>
-                            //...For that I have created<a> user friendly GUI</a> using CustomTKinter. <br><br>
-                        </p>
-            
-                        <div class="project_images_scheduler">
-                            <img class="horizontal_rectangle_scheduler" src="images/horizontal_rectangle_scheduler.svg" alt="Horizontal Rectangle">
-                            <img class="scheduler_photo" src="images/scheduler.png" alt="Scheduler Photo">
-                        </div>
-            
-                        <ul>
-                            <li>
-                                <a href="#">_source_code_</a>
-                            </li>
-                        </ul>
-
-                    </div>
-            
-                    <div class="project">
-                        <span class="project_title">{ _Clash }</span>
-            
-                        <p class="project_text">
-                            <a>Tech stack: _Python, _Jupyter_Notebook, Swift, TensorFlow, NumPy, Pandas</a> <br> <br>
-                            //...Bachelor thesis project. <br> <br>
-                            //...Idea was to create a <a>mobile app which recognizes six different categories
-                            of waste</a>, providing immediate recommendations for its disposal based on the provided photo (it can be chosen from library or taken directly from the level of app). Model and the back-end of an app was created in a Python, while whole UI was done in Swift.<br> <br>
-                            //...At the core of the system is a <a> custom machine learning model</a> based on<a> convolutional
-                            neural networks </a>. Performance
-                            indicators such as accuracy, recall, precision, and F1 score were used to strictly
-                            evaluate the model, achieving an <a>accuracy of 82%</a>.  <br> <br>              
-                        </p>
-            
-                        <div class="project_images_clash">
-                            <img class="horizontal_rectangle_clash" src="images/horizontal_rectangle_clash.svg" alt="Horizontal Rectangle">
-                            <img class="clash_photo" src="images/clash_photo.png" alt="Clash Photo">
-                        </div>
-            
-                        <ul>
-                            <li>
-                                <a href="#">_source_code_</a>
-                            </li>
-                        </ul>
-            
-                        <div class="end_section">
-                            &lt;/projects&gt;
-                        </div>
-                    </div>
-                </section>
-            </div>
-                    
-                <!-- End of projects section-->
-
-        <div class="wrapper">
-            
-            <section class="contact_section"> 
-
-                <div class="contact"> 
-
-                    <div class="start_section">
-                        &lt;contact&gt;
-                    </div>
-                    <div class="form">
-
-                        <span class="contact_info">_name</span>
-                        <form action="#">
-                            <input type="text" placeholder="Type your name...">
-                        </form>
-                        <div class="line">
-                            <img src="images/Line.png" alt="">
-                        </div>
-
-                        <span class="contact_info">_e-mail</span>
-                        <form action="#">
-                            <input type="text" placeholder="Type your e-mail...">
-                        </form>
-                        <div class="line">
-                            <img src="images/Line.png" alt="">
-                        </div>
-
-                        <span class="contact_info">_message</span>
-                        <form action="#">
-                            <textarea class="message-input" type="text" placeholder="Type your message..."></textarea>
-                        </form>
-                        <div class="line">
-                            <img src="images/Line.png" alt="">
-                        </div>
-
-                        <ul>
-                            <li>
-                                <a href="#">{ _send }</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="end_section">
-                        &lt;/contact&gt;
-                    </div>                
-                </div>
-            </section>
-        </div>
-                
-                <!-- End of contact section -->
-
-        <div class="wrapper">
-            <footer>
-                <section class="credits">
-
-                    <div class="social_links">
-                        <div class="linkedin">
-                            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-                        </div>
-                        <div class="github">
-                            <a href="#"><img src="images/github.svg" alt="GitHub"></a>
-                        </div>
-                    </div>
-
-                    <p class="copyright">This website was created by © Filip Pawłowski 2024</p>
-                </section>
-            </footer>
-        </div>
     </div>
-    </div>
-    <script src="main.js"></script>
 </body>
+    <script src="src/main.js"></script>
 </html>
