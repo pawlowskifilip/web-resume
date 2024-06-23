@@ -14,15 +14,22 @@
 * ! style rules for sectionTwo
 */
 
-.sectionTwo__left--text {
+/* .sectionTwo__left--text {
     font-family: var(--font);
     font-size: var(--body);
     color: var(--gray-color);
-}
+} */
 
 .sectionTwo__left--content {
     padding-left: 125px;
-    padding-top: 25px;
+    /* padding-top: 25px; */
 }
 
+/**
+* ! style rules for sectionThree
+*/
 
+.sectionThree__center--content {
+    padding-left: 125px;
+    /* padding-top: 25px; */
+}
