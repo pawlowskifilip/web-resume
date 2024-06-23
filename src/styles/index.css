@@ -14,15 +14,8 @@
 * ! style rules for sectionTwo
 */
 
-/* .sectionTwo__left--text {
-    font-family: var(--font);
-    font-size: var(--body);
-    color: var(--gray-color);
-} */
-
 .sectionTwo__left--content {
     padding-left: 125px;
-    /* padding-top: 25px; */
 }
 
 /**
@@ -31,5 +24,52 @@
 
 .sectionThree__center--content {
     padding-left: 125px;
-    /* padding-top: 25px; */
+    padding-right: 100px;
+}
+
+/**
+* ! style rules for sectionFour
+*/
+
+.sectionFour__center_scheduler--content {
+    padding-left: 125px;
+    padding-right: 100px;
+}
+
+.sectionFour__center_scheduler--photo {
+    padding: 20px 0;
+}
+
+.sectionFour__center_scheduler--btn {
+    align-self: center;
+}
+
+.sectionFour__center_clash--content {
+    padding-left: 125px;
+    padding-right: 100px;
+}
+
+.sectionFour__center_clash--photo {
+    padding: 20px 0;
+}
+
+.sectionFour__center_clash--btn {
+    align-self: center;
+}
+
+/**
+* ! style rules for sectionFive
+*/
+
+.sectionFive__center--content {
+    padding-left: 125px;
+    padding-right: 50px;
+}
+
+.sectionFive__center--btn {
+    align-self: center;
+}
+
+.sectionFive__center__line {
+    padding-right: 67px;
 }

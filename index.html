@@ -70,9 +70,11 @@
                     &lt;/about_me&gt;
                 </div>
             </div>
+
             <div class="sectionTwo__right flex-row">
                 <img src="src/images/filip.png" alt="" class="sectionTwo__right--photo responsive-image">
             </div>
+
         </div>
 
         <div class="sectionThree grid-1 container">
@@ -88,14 +90,93 @@
                     &emsp;&emsp;"Integrating hardware units with testing software",<br>
                     &emsp;&emsp;"Being a part of a machine learning team",<br>
                     &emsp;&emsp;"Writing tasks from Kanban board to improve global code repository",<br>
-                    &emsp;&emsp;"Work with Python, Robot Framework, GitLAB, MongoDB, PyCharm, Jira, Agile",<br>
+                    &emsp;&emsp;"Work with Python, Robot Framework, GitLAB, MongoDB, PyCharm, Jira, &emsp;&emsp;Agile",<br>
                     ]
                 </div>
                 <div class="sectionThree__center-end common-end">
                     &lt;/experience&gt;
                 </div>
             </div>
-        </div>        
+        </div>    
+        
+        <div class="sectionFour grid-1 container">
+            <div class="sectionFour__center flex-column">
+                <div class="sectionFour__center_--start common-start">
+                    &lt;projects&gt;
+                </div>
+
+                <div class="sectionFour__center_scheduler flex-column">
+                    <div class="sectionFour__center_scheduler--content common-text">
+                        { _Scheduler }<br>
+                        Tech stack: _Python, _CustomTKinter<br><br>
+                        
+                        //...Program which automatically creates a schedule based on the provided data like:<br><br>
+                        
+                        [<br>
+                        &emsp;&emsp;"number of workers",<br>
+                        &emsp;&emsp;"their availability",<br>
+                        &emsp;&emsp;"their priority",<br>
+                        &emsp;&emsp;"length of a time frame",<br>
+                        &emsp;&emsp;"number of days",<br>
+                        ]<br><br>
+                        
+                        //...and much more which is stored in the JSON database. After that the program creates and exports the schedule to the .csv file.<br><br>
+                        
+                        //...For that I have created user friendly GUI using CustomTKinter.
+                    </div>
+                    <div class="sectionFour__center_scheduler--photo flex-row">
+                        <img src="src/images/scheduler.png" alt="" class="sectionFour__right--photo responsive-image">
+                    </div>
+                    <button class="sectionFour__center_scheduler--btn source-code-button">_source_code_</button>
+                </div>
+
+                <div class="sectionFour__center_clash flex-column">
+                    <div class="sectionFour__center_clash--content common-text">
+                        { _Clash }<br>
+                        Tech stack: _Python, _Jupyter_Notebook, Swift, TensorFlow, NumPy, Pandas<br><br>
+                        
+                        //...Bachelor thesis project.<br><br>
+                        
+                        //...Idea was to create a mobile app which recognizes six different categories of waste, providing immediate recommendations for its disposal based on the provided photo (it can be chosen from library or taken directly from the level of app). Model and the back-end of an app was created in a Python, while whole UI was done in Swift.<br><br>
+                        
+                        //...At the core of the system is a custom machine learning model based on convolutional neural networks . Performance indicators such as accuracy, recall, precision, and F1 score were used to strictly evaluate the model, achieving an accuracy of 82%.<br>                   
+                    </div>
+                    <div class="sectionFour__center_clash--photo flex-row">
+                        <img src="src/images/clash.png" alt="" class="sectionFour__right--photo responsive-image">
+                    </div>
+                    <button class="sectionFour__center_clash--btn source-code-button">_source_code_</button>
+                </div>
+
+                <div class="sectionFour__center--end common-end">
+                    &lt;/projects&gt;
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sectionFive grid-1 container">
+            <div class="sectionFive__center flex-column">
+                <div class="sectionFive__center--start common-start">
+                    &lt;contact&gt;
+                </div>
+                <div class="sectionFive__center--content common-text">
+                    _name<br>
+                    <textarea type="text" class="sectionFive__center--shortInput" placeholder="Type your name..."></textarea>
+                    _e-mail<br>
+                    <textarea type="text" class="sectionFive__center--shortInput" placeholder="Type your e-mail"></textarea>
+                    _message<br>
+                    <textarea type="text" class="sectionFive__center--messageInput" placeholder="Type your name..."></textarea>
+                </div>
+
+                <button class="sectionFive__center--btn send-button">{ _send }</button>       
+
+                <div class="sectionFive__center-end common-end">
+                    &lt;/contact&gt;
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
     <script src="src/main.js"></script>
