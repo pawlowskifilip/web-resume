@@ -2,6 +2,10 @@
 * ! style rules for sectionOne
 */
 
+.sectionOne__left {
+    padding-left: 125px;
+}
+
 .sectionOne__left--title3-2 {
     line-height: 60px;
 }
@@ -17,7 +21,7 @@
 }
 
 .sectionTwo__left--content {
-    padding-left: 100px;
+    padding-left: 125px;
     padding-top: 25px;
 }
 
