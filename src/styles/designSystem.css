@@ -219,6 +219,7 @@ html {
     left: 0;
     right: 0;
     transition: all 500ms ease;
+    z-index: 5;
 }
 
 .navbar.scrolled {
@@ -252,6 +253,10 @@ html {
     cursor: pointer;
     font-size: var(--h3);
     color: var(--gray-color);
+}
+
+.navbar__menu--mobile{
+    display: none;
 }
 
 /**
@@ -302,16 +307,16 @@ html {
 * ! Styles for common classes
 **/
 
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 .container {
     max-width: 1140px;
     margin: auto;
     align-items: center;
 }
-
-/* .whole-page {
-    max-width: 1140px;
-    height: 60vw;
-} */
 
 .responsive-image {
     max-width: 100%;
@@ -461,7 +466,7 @@ html {
     }
 
     .navbar__menu {
-        z-index: 1;
+        z-index: 4;
         background-color: var(--dark-navy-color);
         position: absolute;
         top: 15vh;
@@ -474,6 +479,22 @@ html {
         justify-content: center;
         align-items: center;
         gap: 40px;
+    }
+
+    .navbar__menu--mobile {
+        z-index: 1;
+        background-color: var(--dark-navy-color);
+        position: fixed;
+        width: 100%;
+        left: 0;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
     }
 
     .navbar__menu--about {
