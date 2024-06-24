@@ -20,6 +20,7 @@
 */
 
 .sectionTwo {
+    padding-top: 20vh;
     padding-bottom: 20vh;
 }
 
@@ -43,7 +44,7 @@
 
 .sectionThree {
     padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-bottom: 40vh;
 }
 
 .sectionThree__center--content {

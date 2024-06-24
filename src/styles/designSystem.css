@@ -148,9 +148,15 @@ html {
     min-width: 50%;
 }
 
+.sectionFour__center_scheduler--link,
+.sectionFour__center_clash--link {
+    text-decoration: none;
+}
+
 .send-button {
     font-size: var(--h3);
     min-width: 30%;
+    cursor: not-allowed;
 }
 
 /**
@@ -444,6 +450,10 @@ html {
     gap: 5px;
 }
 
+.socials--link {
+    cursor: pointer;
+}
+
 .footerLinks__copyright {
     font-size: var(--h6);
     font-family: var(--font);
@@ -568,6 +578,7 @@ html {
 
     .send-button, .source-code-button  {
         font-size: var(--h5);
+
     }
 
     .sectionFive__center--shortInput,

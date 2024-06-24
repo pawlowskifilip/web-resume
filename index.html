@@ -36,22 +36,22 @@
             </div>
 
             <div class="navbar__menu hidden">
-                <a href="" class="navbar__menu--about">00. About</a>
-                <a href="" class="navbar__menu--experience">01. Experience</a>
-                <a href="" class="navbar__menu--projects">10. Projects</a>
-                <a href="" class="navbar__menu--contact">11. Contact</a>
+                <a href="#sectionTwo" class="navbar__menu--about">00. About</a>
+                <a href="#sectionThree" class="navbar__menu--experience">01. Experience</a>
+                <a href="#sectionFour" class="navbar__menu--projects">10. Projects</a>
+                <a href="#sectionFive" class="navbar__menu--contact">11. Contact</a>
             </div>
 
         </div>
 
         <div class="navbar__menu--mobile hidden">
-            <a href="" class="navbar__menu--about">00. About</a>
-            <a href="" class="navbar__menu--experience">01. Experience</a>
-            <a href="" class="navbar__menu--projects">10. Projects</a>
-            <a href="" class="navbar__menu--contact">11. Contact</a>
+            <a href="#sectionTwo" class="navbar__menu--about">00. About</a>
+            <a href="#sectionThree" class="navbar__menu--experience">01. Experience</a>
+            <a href="#sectionFour" class="navbar__menu--projects">10. Projects</a>
+            <a href="#sectionFive" class="navbar__menu--contact">11. Contact</a>
         </div>
 
-        <div class="sectionOne grid-1-1 container">
+        <div class="sectionOne grid-1-1 container" id="sectionOne">
             <div class="sectionOne__left flex-column">
                 <div class="sectionOne__left--title1 title1 text-turquoise">// Hi, my name is</div>
                 <div class="sectionOne__left--title2 title2 text-white">Filip Pawłowski.</div>
@@ -61,7 +61,7 @@
             <div class="sectionOne__right"></div>
         </div>
 
-        <div class="sectionTwo grid-1 container">
+        <div class="sectionTwo grid-1 container" id="sectionTwo">
             <div class="sectionTwo__start common-start">
                 &lt;about_me&gt;
             </div>
@@ -99,7 +99,7 @@
             </div>
         </div>
 
-        <div class="sectionThree grid-1 container">
+        <div class="sectionThree grid-1 container" id="sectionThree">
             <div class="sectionThree__center flex-column">
                 <div class="sectionThree__center--start common-start">
                     &lt;experience&gt;
@@ -123,7 +123,7 @@
             </div>
         </div>    
         
-        <div class="sectionFour grid-1 container">
+        <div class="sectionFour grid-1 container" id="sectionFour">
             <div class="sectionFour__center flex-column">
                 <div class="sectionFour__center_--start common-start">
                     &lt;projects&gt;
@@ -153,7 +153,9 @@
                     <div class="sectionFour__center_scheduler--photo flex-row">
                         <img src="src/images/scheduler.png" alt="" class="sectionFour__right--photo responsive-image">
                     </div>
-                    <button class="sectionFour__center_scheduler--btn source-code-button">_source_code_</button>
+                    <a class="sectionFour__center_scheduler--link flex-row" href="https://github.com/pawlowsfilip/schedule_app" target="_blank">
+                        <button class="sectionFour__center_scheduler--btn source-code-button">_source_code_</button>
+                    </a>
                 </div>
 
                 <div class="sectionFour__center_clash flex-column">
@@ -170,7 +172,9 @@
                     <div class="sectionFour__center_clash--photo flex-row">
                         <img src="src/images/clash.png" alt="" class="sectionFour__right--photo responsive-image">
                     </div>
-                    <button class="sectionFour__center_clash--btn source-code-button">_source_code_</button>
+                    <a class="sectionFour__center_clash--link flex-row" href="https://github.com/pawlowsfilip/Clash" target="_blank">
+                        <button class="sectionFour__center_clash--btn source-code-button flex-row">_source_code_</button>
+                    </a>
                 </div>
 
                 <div class="sectionFour__center--end common-end">
@@ -181,7 +185,7 @@
 
         </div>
 
-        <div class="sectionFive grid-1 container">
+        <div class="sectionFive grid-1 container" id="sectionFive">
             <div class="sectionFive__center flex-column">
                 <div class="sectionFive__center--start common-start">
                     &lt;contact&gt;
@@ -189,11 +193,11 @@
                 
                 <div class="sectionFive__center--content common-text">
                     _name<br>
-                    <textarea type="text" class="sectionFive__center--shortInput" placeholder="Type your name..."></textarea>
+                    <textarea disabled type="text" class="sectionFive__center--shortInput" placeholder="TO"></textarea>
                     <br>_e-mail<br>
-                    <textarea type="text" class="sectionFive__center--shortInput" placeholder="Type your e-mail"></textarea>
+                    <textarea disabled type="text" class="sectionFive__center--shortInput" placeholder="BE"></textarea>
                     <br>_message<br>
-                    <textarea type="text" class="sectionFive__center--messageInput" placeholder="Type your name..."></textarea>
+                    <textarea disabled type="text" class="sectionFive__center--messageInput" placeholder="DONE :)"></textarea>
                 </div>
 
                 <button class="sectionFive__center--btn send-button">{ _send }</button>       
@@ -207,8 +211,8 @@
         <div class="footerWrapper">
             <div class="footerLinks container">
                 <div class="footerLinks__socials">
-                    <img src="src/images/linkedin.svg" alt="" class="socials--link">
-                    <img src="src/images/github.svg" alt="" class="socials--link">
+                    <a href="https://www.linkedin.com/in/filip-paw%C5%82owski-ab2318239" target="_blank"><img src="src/images/linkedin.svg" alt="" class="socials--link"></a>
+                    <a href="https://github.com/pawlowsfilip" target="_blank"><img src="src/images/github.svg" alt="" class="socials--link"></a>
                 </div>
                 <div class="footerLinks__copyright text-turquoise">
                     Made with love by © Filip Pawłowski, 2024
