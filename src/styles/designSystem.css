@@ -259,6 +259,50 @@ html {
     display: none;
 }
 
+.navbar__icons {
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+}
+
+.navbar__icons .navbar__icons--menu {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.navbar__icons span{
+    background: var(--gray-color);
+    width: 35px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s, width 0.5s;
+}
+
+.navbar__icons .line-1 {
+    transform: translate(-50%, -16px);
+}
+
+.navbar__icons .line-3 {
+    transform: translate(-50%, 12px);
+}
+
+.open__mobile__menu .line-1 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.open__mobile__menu .line-3 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.open__mobile__menu .line-2 {
+    width: 0;
+}
+
 /**
 * ! Styles for input
 **/

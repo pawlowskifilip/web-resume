@@ -11,13 +11,11 @@ window.addEventListener("scroll", () => {
 
 // Opening menu
 
-let openBtn = document.querySelector(".bi-list");
-let closeBtn = document.querySelector(".bi-x-lg");
+let openBtn = document.querySelector(".navbar__icons");
 let menu = document.querySelector(".navbar__menu--mobile");
 
 openBtn.addEventListener("click", ()=>{
-    openBtn.classList.toggle("hide");
-    closeBtn.classList.toggle("hide");
+    openBtn.classList.toggle("open__mobile__menu");
     menu.classList.toggle("hidden");
     if (window.pageYOffset > 60) {
         navbar.classList.remove("scrolled");
@@ -27,7 +25,6 @@ openBtn.addEventListener("click", ()=>{
 
 closeBtn.addEventListener("click", ()=>{
     closeBtn.classList.toggle("hide");
-    openBtn.classList.toggle("hide");
     menu.classList.toggle("hidden");
     if (window.pageYOffset > 60) {
         navbar.classList.add("scrolled");
