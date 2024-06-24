@@ -42,39 +42,42 @@
             <div class="sectionOne__right"></div>
         </div>
 
-        <div class="sectionTwo grid-1-1 container">
-            <div class="sectionTwo__left flex-column">
-                <div class="sectionTwo__left--start common-start">
-                    &lt;about_me&gt;
-                </div>
-                <div class="sectionTwo__left--content flex-row common-text">
-                    //...Hi! I'm Filip and I'm currently working as a Test Engineer in regression testing. <br><br>
-    
-                    In my free time (there is not much of it :) I write code. I have mostly worked Python and I'm currently learning Java.<br><br>
-        
-                    I've graduated Electronic and Computer Engineering on Wrocław University of Science and Technology. During that studies I've completed courses like:<br><br>
-        
-                    [<br>
-                    &emsp;&emsp;“Scientific and Engineering Programming”,<br>
-                    &emsp;&emsp;“Programming Systems and Environments”,<br>
-                    &emsp;&emsp;“Computer Networks”,<br>
-                    &emsp;&emsp;“Artificial Intelligence and Computer Vision”<br>
-                    ]<br><br>
-        
-                    Title of my Bachelor Thesis was "Design and implementation of waste recognition system" called "Clash".<br><br>
-        
-                    My biggest interest is AI and the problems that can be solved using it. I love traveling - especially across USA.
-        
-                </div>
-                <div class="sectionTwo__left--end common-end">
-                    &lt;/about_me&gt;
-                </div>
+        <div class="sectionTwo grid-1 container">
+            <div class="sectionTwo__start common-start">
+                &lt;about_me&gt;
             </div>
+                <div class="sectionTwo__left grid-1-1">
+                    <div class="sectionTwo__left--content flex-column common-text">
+                        //...Hi! I'm Filip and I'm currently working as a Test Engineer in regression testing. <br><br>
+        
+                        In my free time (there is not much of it :) I write code. I have mostly worked Python and I'm currently learning Java.<br><br>
+            
+                        I've graduated Electronic and Computer Engineering on Wrocław University of Science and Technology. During that studies I've completed courses like:<br><br>
+            
+                        [<br>
+                        <div class="sectionTwo__left--content--list list">
+                            “Programming Systems and Environments”,<br>
+                            “Computer Networks”,<br>
+                            “Artificial Intelligence and Computer Vision”<br>
+                            “Scientific and Engineering Programming”,<br>
+                        </div>
+                        ]<br><br>
+            
+                        Title of my Bachelor Thesis was "Design and implementation of waste recognition system" called "Clash".<br><br>
+            
+                        My biggest interest is AI and the problems that can be solved using it. I love traveling - especially across USA.
+                
+                    </div>
 
-            <div class="sectionTwo__right flex-row">
-                <img src="src/images/filip.png" alt="" class="sectionTwo__right--photo responsive-image">
+                    <div class="sectionTwo__right flex-row">
+                        <div class="sectionTwo__right--photos flex-column">
+                            <img src="src/images/filip.png" alt="" class="sectionTwo__right--photo responsive-image">
+                        </div>
+                    </div>
+                </div>
+            <div class="sectionTwo__end common-end">
+                &lt;/about_me&gt;
             </div>
-
         </div>
 
         <div class="sectionThree grid-1 container">
@@ -86,11 +89,13 @@
                     Automation Test Engineer @ Nokia<br>
                     October 2022 - Present<br>
                     [<br>
-                    &emsp;&emsp;"Creating reports of test errors",<br>
-                    &emsp;&emsp;"Integrating hardware units with testing software",<br>
-                    &emsp;&emsp;"Being a part of a machine learning team",<br>
-                    &emsp;&emsp;"Writing tasks from Kanban board to improve global code repository",<br>
-                    &emsp;&emsp;"Work with Python, Robot Framework, GitLAB, MongoDB, PyCharm, Jira, Agile",<br>
+                    <div class="sectionThree__center--content--list list">
+                        "Creating reports of test errors",<br>
+                        "Integrating hardware units with testing software",<br>
+                        "Being a part of a machine learning team",<br>
+                        "Writing tasks from Kanban board to improve global code repository",<br>
+                        "Work with Python, Robot Framework, Git, MongoDB, PyCharm, Jira, Agile",<br>
+                    </div>
                     ]
                 </div>
                 <div class="sectionThree__center-end common-end">
@@ -113,11 +118,13 @@
                         //...Program which automatically creates a schedule based on the provided data like:<br><br>
                         
                         [<br>
-                        &emsp;&emsp;"number of workers",<br>
-                        &emsp;&emsp;"their availability",<br>
-                        &emsp;&emsp;"their priority",<br>
-                        &emsp;&emsp;"length of a time frame",<br>
-                        &emsp;&emsp;"number of days",<br>
+                        <div class="sectionFour__center_scheduler--content--list list">
+                            "number of workers",<br>
+                            "their availability",<br>
+                            "their priority",<br>
+                            "length of a time frame",<br>
+                            "number of days",<br>
+                        </div>
                         ]<br><br>
                         
                         //...and much more which is stored in the JSON database. After that the program creates and exports the schedule to the .csv file.<br><br>
@@ -164,9 +171,9 @@
                 <div class="sectionFive__center--content common-text">
                     _name<br>
                     <textarea type="text" class="sectionFive__center--shortInput" placeholder="Type your name..."></textarea>
-                    _e-mail<br>
+                    <br>_e-mail<br>
                     <textarea type="text" class="sectionFive__center--shortInput" placeholder="Type your e-mail"></textarea>
-                    _message<br>
+                    <br>_message<br>
                     <textarea type="text" class="sectionFive__center--messageInput" placeholder="Type your name..."></textarea>
                 </div>
 
@@ -178,6 +185,17 @@
             </div>
         </div>
 
+        <div class="footerWrapper">
+            <div class="footerLinks container">
+                <div class="footerLinks__socials">
+                    <img src="src/images/linkedin.svg" alt="" class="socials--link">
+                    <img src="src/images/github.svg" alt="" class="socials--link">
+                </div>
+                <div class="footerLinks__copyright text-turquoise">
+                    Made with love by © Filip Pawłowski, 2024
+                </div>
+            </div>
+        </div>
     </div>
 </body>
     <script src="src/main.js"></script>
