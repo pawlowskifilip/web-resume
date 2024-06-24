@@ -1,12 +1,12 @@
-// const nav = document.querySelector("nav");
+const navbar = document.querySelector(".navbar");
 
-// window.addEventListener("scroll", () => {
-//     if (window.pageYOffset > 60) {
-//         nav.classList.add("scrolled");
-//     } else {
-//         nav.classList.remove("scrolled");
-//     }
-// });
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 60) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
 
 let openBtn = document.querySelector(".bi-list");
 let closeBtn = document.querySelector(".bi-x-lg");
