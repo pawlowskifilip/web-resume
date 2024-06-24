@@ -24,7 +24,7 @@
 
 .sectionThree__center--content {
     padding-left: 125px;
-    padding-right: 100px;
+    /* padding-right: 100px; */
 }
 
 /**
@@ -33,7 +33,7 @@
 
 .sectionFour__center_scheduler--content {
     padding-left: 125px;
-    padding-right: 100px;
+    /* padding-right: 100px; */
 }
 
 .sectionFour__center_scheduler--photo {
@@ -46,7 +46,7 @@
 
 .sectionFour__center_clash--content {
     padding-left: 125px;
-    padding-right: 100px;
+    /* padding-right: 100px; */
 }
 
 .sectionFour__center_clash--photo {
