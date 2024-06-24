@@ -295,6 +295,11 @@ html {
     align-items: center;
 }
 
+/* .whole-page {
+    max-width: 1140px;
+    height: 60vw;
+} */
+
 .responsive-image {
     max-width: 100%;
     height: auto;

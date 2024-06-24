@@ -3,6 +3,11 @@
 * ! style rules for sectionOne
 */
 
+.sectionOne {
+    padding-bottom: 50vh;
+    padding-top: 20vh;
+}
+
 .sectionOne__left {
     padding-left: 60px;
 }
@@ -14,6 +19,10 @@
 /**
 * ! style rules for sectionTwo
 */
+
+.sectionTwo {
+    padding-bottom: 20vh;
+}
 
 .sectionTwo__left--content {
     padding-left: 60px;
@@ -33,6 +42,11 @@
 * ! style rules for sectionThree
 */
 
+.sectionThree {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
 .sectionThree__center--content {
     padding-left: 60px;
     /* padding-right: 100px; */
@@ -41,6 +55,11 @@
 /**
 * ! style rules for sectionFour
 */
+
+.sectionFour {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
 
 .sectionFour__center_scheduler--content {
     padding-left: 60px;
@@ -71,6 +90,11 @@
 /**
 * ! style rules for sectionFive
 */
+
+.sectionFive {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
 
 .sectionFive__center--content {
     padding-left: 60px;
