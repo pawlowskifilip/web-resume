@@ -1,3 +1,4 @@
+// pretty scroll
 const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
@@ -7,6 +8,8 @@ window.addEventListener("scroll", () => {
         navbar.classList.remove("scrolled");
     }
 });
+
+// Opening menu
 
 let openBtn = document.querySelector(".bi-list");
 let closeBtn = document.querySelector(".bi-x-lg");
