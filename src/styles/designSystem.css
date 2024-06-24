@@ -41,6 +41,91 @@
     box-sizing: border-box;
 }
 
+html {
+    background: var(--dark-navy-color);
+}
+
+/**
+* ! style for background gradient
+**/
+.backgroundGradient {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.backgroundGradient div {
+    position: absolute;
+    border-radius: 50%;
+    animation: gradient 6s infinite;
+    opacity: 0.6;
+}
+
+@keyframes gradient {
+    70% {
+        transform: scale(1.2) translate(50px);
+    }
+}
+
+.backgroundGradient div.main {
+    height: 120%;
+    width: 110%;
+    background-color: rgba(31, 36, 44, 0.6);
+    left: -10%;
+    top: -10%;
+}
+
+.backgroundGradient div:nth-child(2) {
+    height: 60%;
+    width: 50%;
+    background-color: rgba(124, 170, 173, 0.6);
+    top: -30%;
+    right: -12%;
+    animation-delay: 2s;
+}
+
+.backgroundGradient div:nth-child(3) {
+    height: 50%;
+    width: 40%;
+    background-color: rgba(147, 216, 221, 0.6);
+    bottom: -20%;
+    right: -30%;
+    animation-delay: 0.3s;
+}
+
+.backgroundGradient div:nth-child(4) {
+    height: 40%;
+    width: 30%;
+    background-color: rgba(238, 238, 238, 0.5);
+    bottom: -30%;
+    left: -10%;
+    animation-delay: 1.2s;
+}
+
+.backgroundGradient div:nth-child(5) {
+    height: 30%;
+    width: 25%;
+    background-color: rgba(177, 177, 177, 0.6);
+    top: 10%;
+    left: 5%;
+    animation-delay: 1s;
+}
+
+.backgroundGradient:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(200px);
+}
+
 /**
 * ! Styles for button
 **/
@@ -117,7 +202,8 @@
 **/
 
 .hero {
-    background-color: var(--dark-navy-color);
+    background-color: transparent;
+    z-index: 2;
 }
 
 /**
@@ -246,6 +332,8 @@
     justify-content: center;
     gap: 20px;
 }
+
+
 
 .common-start {
     font-family: var(--font);
@@ -448,7 +536,6 @@
     .sectionFive__center--messageInput {
         font-size: var(--h7);
     }
-    
 
     .footerLinks__socials {
         justify-content: center;
