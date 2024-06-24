@@ -10,24 +10,20 @@ window.addEventListener("scroll", () => {
 });
 
 // Opening menu
-
 let openBtn = document.querySelector(".navbar__icons");
 let menu = document.querySelector(".navbar__menu--mobile");
 
-openBtn.addEventListener("click", ()=>{
+openBtn.addEventListener("click", () => {
     openBtn.classList.toggle("open__mobile__menu");
     menu.classList.toggle("hidden");
-    if (window.pageYOffset > 60) {
-        navbar.classList.remove("scrolled");
-    }
     document.body.classList.toggle("stop-scrolling");
-});
 
-closeBtn.addEventListener("click", ()=>{
-    closeBtn.classList.toggle("hide");
-    menu.classList.toggle("hidden");
-    if (window.pageYOffset > 60) {
-        navbar.classList.add("scrolled");
+    // Toggle 'scrolled' class based on menu state
+    if (document.body.classList.contains("stop-scrolling")) {
+        navbar.classList.remove("scrolled");
+    } else {
+        if (window.pageYOffset > 60) {
+            navbar.classList.add("scrolled");
+        }
     }
-    document.body.classList.toggle("stop-scrolling");
 });
