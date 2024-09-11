@@ -15,7 +15,7 @@
 
     --label: 44px;
     --ls: 5px;
-/* 
+    /* 
     --title1: 22px;
     --title2: 44px;
     --title3: 65px; */
@@ -35,7 +35,7 @@
 * ! removing default styles of the browser
 **/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -127,6 +127,24 @@ html {
     -webkit-backdrop-filter: blur(200px);
 }
 
+/** 
+* ! Styles text highlight
+**/
+.turquoise_highlight {
+    color: var(--turquoise-blue-color);
+    display: inline;
+
+}
+
+.turquoise_highlight :hover {
+    color: var(--lighter-turquoise-blue-color);
+    display: inline;
+}
+
+a:hover .highlight {
+    color: var(--white-color);
+}
+
 /**
 * ! Styles for button
 **/
@@ -149,6 +167,14 @@ html {
     min-width: 50%;
 }
 
+.source-code-button:hover {
+    color: var(--lighter-turquoise-blue-color);
+}
+
+.navbar__menu a:hover .turquoise_highlight {
+    color: var(--lighter-turquoise-blue-color);
+}
+
 .sectionFour__center_scheduler--link,
 .sectionFour__center_clash--link {
     text-decoration: none;
@@ -161,6 +187,7 @@ html {
 }
 
 /**
+* ! Styles for 
 * ! Styles for text colors
 **/
 
@@ -241,14 +268,21 @@ html {
 
 }
 
-.navbar__menu {    
+.navbar__menu {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-[class  ^="navbar__menu--"] {
+[class ^="navbar__menu--"] {
     color: var(--gray-color);
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: var(--h5);
+}
+
+[class ^="navbar__menu--"]:hover {
+    color: var(--white-color);
     text-decoration: none;
     font-family: var(--font);
     font-size: var(--h5);
@@ -264,7 +298,7 @@ html {
     color: var(--gray-color);
 }
 
-.navbar__menu--mobile{
+.navbar__menu--mobile {
     display: none;
 }
 
@@ -280,7 +314,7 @@ html {
     position: relative;
 }
 
-.navbar__icons span{
+.navbar__icons span {
     background: var(--gray-color);
     width: 35px;
     height: 4px;
@@ -312,6 +346,8 @@ html {
     width: 0;
 }
 
+
+
 /**
 * ! Styles for input
 **/
@@ -325,15 +361,15 @@ html {
     background-color: transparent;
     padding: 10px 11px 11px 11px;
     border-radius: 3px;
-    resize: none; 
+    resize: none;
     overflow: none;
     border-color: var(--turquoise-blue-color);
-    border-bottom-width: 3px;    
+    border-bottom-width: 3px;
     border-top: none;
     border-left: none;
     border-right: none;
     outline: none;
-  
+
 }
 
 .sectionFive__center--messageInput {
@@ -345,7 +381,7 @@ html {
     max-width: 900px;
     background-color: transparent;
     padding: 10px 11px 11px 11px;
-    resize: none; 
+    resize: none;
     overflow: auto;
     border-color: var(--turquoise-blue-color);
     border-bottom-width: 3px;
@@ -376,7 +412,7 @@ html {
     height: auto;
 }
 
-.grid-1-1-1{
+.grid-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 5fr 3fr;
     padding: 40px 0;
@@ -486,6 +522,7 @@ html {
     .title1 {
         font-size: var(--h6);
     }
+
     .title2 {
         font-size: var(--h4);
     }
@@ -494,7 +531,8 @@ html {
         font-size: var(--h2);
     }
 
-    .common-start, .common-end{
+    .common-start,
+    .common-end {
         font-size: var(--h4);
     }
 
@@ -502,7 +540,8 @@ html {
         font-size: var(--h5);
     }
 
-    .send-button, .source-code-button  {
+    .send-button,
+    .source-code-button {
         font-size: var(--h4);
     }
 
@@ -510,7 +549,7 @@ html {
     .sectionFive__center--messageInput {
         font-size: var(--h6);
     }
-    
+
     .sectionTwo__right--photos {
         max-width: 50%;
         height: auto;
@@ -564,6 +603,7 @@ html {
     .title1 {
         font-size: var(--h7);
     }
+
     .title2 {
         font-size: var(--h5);
     }
@@ -572,7 +612,8 @@ html {
         font-size: var(--h3);
     }
 
-    .common-start, .common-end{
+    .common-start,
+    .common-end {
         font-size: var(--h5);
     }
 
@@ -580,7 +621,8 @@ html {
         font-size: var(--h6);
     }
 
-    .send-button, .source-code-button  {
+    .send-button,
+    .source-code-button {
         font-size: var(--h5);
 
     }
@@ -599,6 +641,7 @@ html {
     .title1 {
         font-size: var(--h7);
     }
+
     .title2 {
         font-size: var(--h6);
     }
@@ -607,7 +650,8 @@ html {
         font-size: var(--h4);
     }
 
-    .common-start, .common-end{
+    .common-start,
+    .common-end {
         font-size: var(--h6);
     }
 
@@ -615,7 +659,8 @@ html {
         font-size: var(--h7);
     }
 
-    .send-button, .source-code-button  {
+    .send-button,
+    .source-code-button {
         font-size: var(--h6);
     }
 
