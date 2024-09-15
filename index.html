@@ -256,7 +256,7 @@
                     &lt;contact&gt;
                 </div>
 
-                <form action="https://formspree.io/f/mgvwbnqq" method="POST"
+                <form id="contact-form" action="https://formspree.io/f/mgvwbnqq" method="POST"
                     class="sectionFive__center--content common-text">
                     <input type="text" name="_honey" style="display:none">
                     _name<br>
@@ -268,11 +268,11 @@
                     _message<br>
                     <textarea name="message" class="sectionFive__center--messageInput"
                         placeholder="Type your message here" required></textarea><br>
+
+                    <div id="form-message" class="form-message"></div>
+
+                    <button type="submit" class="sectionFive__center--btn send-button">{ _send }</button>
                 </form>
-
-                <div id="form-message" class="form-message"></div>
-
-                <button type="submit" class="sectionFive__center--btn send-button">{ _send }</button>
 
                 <div class="sectionFive__center-end common-end">
                     &lt;/contact&gt;
