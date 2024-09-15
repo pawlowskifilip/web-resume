@@ -109,6 +109,11 @@
     padding-right: 67px;
 }
 
+.form-message {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
 @media (max-width: 1024px) {
     .sectionTwo__right--photos {
         order: 0;

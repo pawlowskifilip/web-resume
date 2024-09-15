@@ -40,3 +40,25 @@ menuItems.forEach(item => {
         }
     });
 });
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const form = event.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    const messageDiv = document.getElementById('form-message');
+
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+            form.reset();
+            messageDiv.innerHTML = '<p style="color: green;">Message sent successfully!</p>';
+        } else {
+            messageDiv.innerHTML = '<p style="color: red;">Oops! There was a problem submitting your form.</p>';
+        }
+    };
+    xhr.send(data);
+});

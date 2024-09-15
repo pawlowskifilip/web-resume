@@ -256,17 +256,23 @@
                     &lt;contact&gt;
                 </div>
 
-                <div class="sectionFive__center--content common-text">
+                <form action="https://formspree.io/f/mgvwbnqq" method="POST"
+                    class="sectionFive__center--content common-text">
+                    <input type="text" name="_honey" style="display:none">
                     _name<br>
-                    <textarea disabled type="text" class="sectionFive__center--shortInput" placeholder="TO"></textarea>
-                    <br>_e-mail<br>
-                    <textarea disabled type="text" class="sectionFive__center--shortInput" placeholder="BE"></textarea>
-                    <br>_message<br>
-                    <textarea disabled type="text" class="sectionFive__center--messageInput"
-                        placeholder="DONE :)"></textarea>
-                </div>
+                    <input type="text" name="name" class="sectionFive__center--shortInput" placeholder="Enter your name"
+                        required><br>
+                    _e-mail<br>
+                    <input type="email" name="email" class="sectionFive__center--shortInput"
+                        placeholder="Enter your email" required><br>
+                    _message<br>
+                    <textarea name="message" class="sectionFive__center--messageInput"
+                        placeholder="Type your message here" required></textarea><br>
+                </form>
 
-                <button class="sectionFive__center--btn send-button">{ _send }</button>
+                <div id="form-message" class="form-message"></div>
+
+                <button type="submit" class="sectionFive__center--btn send-button">{ _send }</button>
 
                 <div class="sectionFive__center-end common-end">
                     &lt;/contact&gt;

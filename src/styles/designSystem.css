@@ -180,11 +180,11 @@ a:hover .highlight {
     text-decoration: none;
 }
 
-.send-button {
+/* .send-button {
     font-size: var(--h3);
     min-width: 30%;
     cursor: not-allowed;
-}
+} */
 
 /**
 * ! Styles for 
