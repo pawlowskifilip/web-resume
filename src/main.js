@@ -55,7 +55,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         if (xhr.readyState !== XMLHttpRequest.DONE) return;
         if (xhr.status === 200) {
             form.reset();
-            messageDiv.innerHTML = '<p style="color: green;">Message sent successfully!</p>';
+            messageDiv.innerHTML = '<p style="color: var(--turquoise-blue-color);">Message sent successfully!</p>';
         } else {
             messageDiv.innerHTML = '<p style="color: red;">Oops! There was a problem submitting your form.</p>';
         }

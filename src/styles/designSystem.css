@@ -459,6 +459,22 @@ a:hover .highlight {
     font-size: var(--body);
 }
 
+.heading-large-title {
+    font-size: var(--h3);
+    color: var(--white-color);
+    font-family: var(--font);
+}
+
+.heading-medium-stack {
+    font-size: var(--h5);
+    color: var(--turquoise-blue-color);
+    font-family: var(--font);
+}
+
+.time_period {
+    font-size: var(--h5);
+}
+
 .list {
     padding: 0 50px;
 }
@@ -467,6 +483,24 @@ a:hover .highlight {
     font-family: var(--font);
     color: var(--turquoise-blue-color);
     font-size: var(--h3);
+}
+
+.form-message {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.sectionFive__center--btn {
+    display: block;
+    margin: 1% auto;
+    font-size: var(--h3);
+
+}
+
+.sectionFive__center--btn:hover {
+    color: var(--white-color);
 }
 
 /**
@@ -523,7 +557,8 @@ a:hover .highlight {
         font-size: var(--h6);
     }
 
-    .title2 {
+    .title2,
+    .heading-large-title {
         font-size: var(--h4);
     }
 
@@ -546,7 +581,9 @@ a:hover .highlight {
     }
 
     .sectionFive__center--shortInput,
-    .sectionFive__center--messageInput {
+    .sectionFive__center--messageInput,
+    .heading-medium-stack,
+    .time_period {
         font-size: var(--h6);
     }
 
@@ -613,7 +650,8 @@ a:hover .highlight {
     }
 
     .common-start,
-    .common-end {
+    .common-end,
+    .heading-large-title {
         font-size: var(--h5);
     }
 
@@ -622,13 +660,15 @@ a:hover .highlight {
     }
 
     .send-button,
-    .source-code-button {
+    .source-code-button .send-button {
         font-size: var(--h5);
 
     }
 
     .sectionFive__center--shortInput,
-    .sectionFive__center--messageInput {
+    .sectionFive__center--messageInput,
+    .heading-medium-stack,
+    .time_period {
         font-size: var(--h7);
     }
 }
@@ -651,7 +691,8 @@ a:hover .highlight {
     }
 
     .common-start,
-    .common-end {
+    .common-end,
+    .heading-large-title {
         font-size: var(--h6);
     }
 
